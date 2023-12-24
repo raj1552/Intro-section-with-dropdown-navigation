@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+    font-family: 'Epilogue', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0px 40px 0px 40px;
+    height: 75px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.navitems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.features{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.features-drop-down{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    top: 30px;
+    right: 10px;
+    padding: 20px 0px 15px 30px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+}
+.features-drop-down .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.features-drop-down .items .dropdown-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.features-drop-down .items a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+}
+.features-drop-down:hover .items a{
+    display: block;
+}
+.features:hover .features-drop-down{
+    display: block;
+}
+.company{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.company-drop-down{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    top: 30px;
+    right: 10px;
+    height: 70px;
+    padding: 20px 5px 20px 40px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+}
+.company-drop-down a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+}
+.company-drop-down .items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.company:hover .company-drop-down{
+    display: block;
+}
+.navitems ul{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    cursor: pointer;
+}
+.authUser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.authUser ul{
+    text-decoration: none;
+    cursor: pointer;
+}
+.authUser .border{
+    padding: 10px 20px 10px 20px;
+    border:1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+}
+.banner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+.banner-text-layer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+.text-layer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.banner-text-layer h1{
+    font-size: 70px;
+    color: hsl(0, 0%, 8%);
+    line-height: 70px;
+    font-weight: 700;
+}
+.banner-text-layer p{
+    font-size: 16px;
+    color: hsl(0, 0%, 41%);
+    line-height: 25px;
+    font-weight: 500;
+    text-align: justify;
+}
+.banner-text-layer .btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.banner-image-layer img{
+    width: 418px;
+    height: 516px;
+}
+.banner-mobile-image{
+    display: none;
+}
+@media (max-width: 375px) {
+    .banner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-mobile-image{
+        display: block;
+    }
+    .banner-mobile-image img{
+        width: 375px;
+        height: 290px;
+    }
+    .banner-image-layer{
+        display: none;
+    }
+}
